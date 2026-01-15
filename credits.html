@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Credits & Deductions — Low Income Tax Help</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Low Income Tax Help</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <nav class="site-nav" role="navigation" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tax-basics.html">Tax Basics</a></li>
+          <li class="has-submenu">
+            <a href="credits.html">Credits &amp; Deductions</a>
+            <ul class="submenu">
+              <li><a href="credits.html#eitc">EITC</a></li>
+              <li><a href="credits.html#ctc">CTC</a></li>
+              <li><a href="credits.html#other">Other Credits</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a href="irs-operations.html">IRS</a>
+            <ul class="submenu">
+              <li><a href="irs-operations.html">Overview</a></li>
+              <li><a href="audits.html">Audits</a></li>
+              <li><a href="tax-system.html">Tax system</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a href="free-programs.html">Free Help Programs</a>
+            <ul class="submenu">
+              <li><a href="free-programs.html">VITA</a></li>
+              <li><a href="free-programs.html">LITC</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a href="resources-warnings.html">Resources&nbsp;&amp; Warnings</a>
+            <ul class="submenu">
+              <li><a href="resources-warnings.html">Resources</a></li>
+              <li><a href="avoid-fraud.html">Avoid Scams</a></li>
+            </ul>
+          </li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Maximize Your Refund</h1>
+
+    <section>
+      <h2>Standard Deduction vs Itemized Deductions</h2>
+      <p>Choose the option that gives the lowest taxable income.</p>
+      <table style="width:100%;border-collapse:collapse;margin-top:.5rem">
+        <thead>
+          <tr style="text-align:left;background:#f8fafc"><th>Filing Status</th><th>2025 Amount</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Single</td><td>$14,600</td></tr>
+          <tr><td>Married (filing jointly)</td><td>$29,200</td></tr>
+          <tr><td>Head of Household</td><td>$21,900</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Earned Income Tax Credit (EITC)</h2>
+      <p>Provides refundable credit to eligible low- and moderate-income workers. Eligibility depends on income, filing status, and number of qualifying children.</p>
+      <p>The credit amount and income limits change annually. Qualifying tests include adjusted gross income, investment income limits, and relationship/residence tests for children.</p>
+      <p>Common mistakes include reporting incorrect earned income, failing to apply the qualifying child rules correctly, or choosing the wrong filing status. These can cause an eligibility error or delay.</p>
+      <div id="eitcCalc" class="card" aria-live="polite">
+        <h3>EITC Estimate</h3>
+        <p class="kicker" style="margin-top:0.25rem;font-size:.95rem;color:var(--muted)">Provides a close estimate using 2024 published limits. Not the full IRS worksheet calculation.</p>
+        <form>
+          <label>Filing status
+            <select name="status">
+              <option value="single">Single / Head of household / Widowed / Married filing separately</option>
+              <option value="married">Married filing jointly</option>
+            </select>
+          </label>
+          <label>Adjusted gross income <input name="income" type="number" inputmode="numeric" placeholder="e.g. 18000"></label>
+          <label>Investment income (taxable interest, dividends, capital gains) <input name="investment" type="number" inputmode="numeric" placeholder="e.g. 200"></label>
+          <label>Number of qualifying children <input name="children" type="number" min="0" max="10" value="0"></label>
+          <button class="btn" type="submit">Estimate</button>
+        </form>
+        <div class="calc-output" style="margin-top:.5rem;color:var(--muted)"></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Child Tax Credit (CTC)</h2>
+      <p>Credit for eligible parents for each qualifying child. Some or all of the credit may be refundable. Rules change periodically.</p>
+      <p>Eligibility depends on child age and relationship, earned income, and taxpayer's adjusted gross income. The refundable portion (ACTC) has earned-income thresholds and limits.</p>
+      <p>Mistakes often come from miscounting qualifying children, not reporting other income that affects phaseouts, or misunderstanding refundable vs. nonrefundable portions.</p>
+      <div id="ctcCalc" class="card" aria-live="polite">
+        <h3>Child Tax Credit / Additional Child Tax Credit Calculator</h3>
+        <form>
+          <label>Filing status
+            <select name="status">
+              <option value="single">Single / Head of household / Widowed / Married filing separately</option>
+              <option value="married">Married filing jointly</option>
+            </select>
+          </label>
+          <label>Adjusted gross income <input name="income" type="number" placeholder="e.g. 30000"></label>
+          <label>Earned income (wages/self-employment) <input name="earned" type="number" placeholder="e.g. 28000"></label>
+          <label>Tax liability (federal income tax before credits) <input name="tax" type="number" placeholder="e.g. 150"></label>
+          <label>Number of qualifying children <input name="children" type="number" min="0" max="10" value="1"></label>
+          <button class="btn" type="submit">Estimate</button>
+        </form>
+        <div class="calc-output" style="margin-top:.5rem;color:var(--muted)"></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Other Common Credits</h2>
+      <ul>
+        <li>Education: American Opportunity Credit, Lifetime Learning Credit</li>
+        <li>Energy tax credits for qualified improvements</li>
+        <li>Retirement Savings (Saver’s Credit)</li>
+      </ul>
+      <p class="kicker">CTAs</p>
+      <p><a class="btn" href="#eitcCalc">Check EITC Eligibility</a> <a class="btn" href="#ctcCalc">Check CTC Eligibility</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container">© <span id="year"></span> Low Income Tax Help</div></footer>
+</body>
+</html>

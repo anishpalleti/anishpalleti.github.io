@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Tax Basics — Low Income Tax Help</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Low Income Tax Help</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav class="site-nav" role="navigation" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tax-basics.html">Tax Basics</a></li>
+          <li class="has-submenu">
+            <a href="credits.html">Credits &amp; Deductions</a>
+            <ul class="submenu">
+              <li><a href="credits.html#eitc">EITC</a></li>
+              <li><a href="credits.html#ctc">CTC</a></li>
+              <li><a href="credits.html#other">Other Credits</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a href="irs-operations.html">IRS</a>
+            <ul class="submenu">
+              <li><a href="irs-operations.html">Overview</a></li>
+              <li><a href="audits.html">Audits</a></li>
+              <li><a href="tax-system.html">Tax system</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a href="free-programs.html">Free Help Programs</a>
+            <ul class="submenu">
+              <li><a href="free-programs.html">VITA</a></li>
+              <li><a href="free-programs.html">LITC</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a href="resources-warnings.html">Resources&nbsp;&amp; Warnings</a>
+            <ul class="submenu">
+              <li><a href="resources-warnings.html">Resources</a></li>
+              <li><a href="avoid-fraud.html">Avoid Scams</a></li>
+            </ul>
+          </li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Understanding Your Taxes</h1>
+
+    <section>
+      <h2>How the IRS Works</h2>
+      <p>The IRS administers federal tax laws, processes returns, issues refunds, and enforces compliance.</p>
+      <p>It collects information from employers, financial institutions, and taxpayers to match reported income and credits, and it uses automated checks plus manual review to identify possible discrepancies.</p>
+      <p>The agency also issues guidance, publishes forms and instructions, and provides taxpayer assistance through phone lines, online tools, and community programs.</p>
+      <div class="infographic" aria-label="Infographic showing four steps: Earn, Report, Process, Refund or Notice">
+        <div class="infographic-controls">
+          <button class="inf-prev carousel-btn" aria-label="Previous step" data-target="infographic-carousel">‹</button>
+          <button class="inf-next carousel-btn" aria-label="Next step" data-target="infographic-carousel">›</button>
+        </div>
+
+        <div id="infographic-carousel" class="infographic-carousel" role="region" aria-roledescription="carousel" aria-label="IRS process steps">
+          <div class="infographic-track">
+            <div class="slide card" role="group" aria-roledescription="slide" aria-label="Step 1 of 4: Earn">
+              <div class="topbar" style="background:var(--blue)"></div>
+              <div class="step-icon" aria-hidden="true">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9" stroke="#93C5FD" stroke-width="2" fill="#fff"/><path d="M9 10c1-1 3-1 4 0" stroke="#60A5FA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <h3>1. Earn</h3>
+              <p>Income is earned (wages, tips, self-employment, interest, etc.).</p>
+            </div>
+
+            <div class="slide card" role="group" aria-roledescription="slide" aria-label="Step 2 of 4: Report">
+              <div class="topbar" style="background:#f59e0b"></div>
+              <div class="step-icon" aria-hidden="true">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="6" y="4" width="12" height="14" rx="2" stroke="#FBBF24" stroke-width="2" fill="#fff"/><path d="M8 9h8" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </div>
+              <h3>2. Report</h3>
+              <p>You report income and credits on a tax return, plus W-2/1099 forms filed by employers and banks.</p>
+            </div>
+
+            <div class="slide card" role="group" aria-roledescription="slide" aria-label="Step 3 of 4: Process">
+              <div class="topbar" style="background:#8b5cf6"></div>
+              <div class="step-icon" aria-hidden="true">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g stroke="#C4B5FD" stroke-width="2" fill="#fff"><circle cx="12" cy="12" r="6"/></g><path d="M12 8v4l2 1" stroke="#7C3AED" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <h3>3. Process</h3>
+              <p>IRS verifies and matches forms, calculates tax owed or refund, and may request more information.</p>
+            </div>
+
+            <div class="slide card" role="group" aria-roledescription="slide" aria-label="Step 4 of 4: Refund or Notice">
+              <div class="topbar" style="background:var(--green)"></div>
+              <div class="step-icon" aria-hidden="true">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2v20" stroke="#86efac" stroke-width="2"/><path d="M5 12h14" stroke="#10B981" stroke-width="2" stroke-linecap="round"/></svg>
+              </div>
+              <h3>4. Refund / Notice</h3>
+              <p>If overpaid, you get a refund. If there’s an issue or balance due, the IRS sends a notice.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="infographic-tip card" role="note">
+          <strong>Tip:</strong> Keep records (W-2s/1099s, receipts, and notices). Respond promptly if you receive an IRS letter.
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Income Tax Returns Explained</h2>
+      <p>Tax returns are forms submitted annually (Form 1040 for most individuals) that report income, credits, deductions, and determine tax owed or refund.</p>
+      <p>Most returns include schedules and attachments for specific types of income (self-employment, rental, investment) and adjustments to income such as educator expenses or student loan interest.</p>
+      <p>Filing accurately helps prevent delays or audits. Report all income and provide supporting documentation when requested.</p>
+      <h3>Common parts of a tax return</h3>
+      <ul>
+        <li>Personal information and filing status</li>
+        <li>Income (wages, self-employment, interest, dividends)</li>
+        <li>Deductions and credits</li>
+        <li>Tax computation and payments</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>What Are Income Tax Returns?</h2>
+      <p>An income tax return reports your income, deductions, credits, and tax liability to the IRS. Individuals typically file Form 1040.</p>
+
+      <h3>What to report</h3>
+      <ul>
+        <li>Wages, salary, and tips (Form W-2).</li>
+        <li>Self-employment income (Schedule C).</li>
+        <li>Interest, dividends, and other income.</li>
+      </ul>
+
+      <h3>Filing and deadlines</h3>
+      <p>Most individuals file by the annual deadline (usually April). Extensions may be available for filing, but taxes owed are still due on time.</p>
+    </section>
+
+    <section>
+      <h2>Step-by-Step Filing Guide</h2>
+      <ol>
+        <li>Collect income forms (W-2, 1099)</li>
+        <li>Gather receipts and documents for deductions</li>
+        <li>Organize proof for credits (childcare, education, earned income)</li>
+        <li>Determine eligibility for free programs (VITA/LITC) and schedule an appointment if eligible</li>
+        <li>File electronically or using an approved preparer and verify the preparer's credentials</li>
+        <li>Track refund online, keep your confirmation, and respond promptly to any IRS notices</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Filing Requirements</h2>
+      <p>Filing requirements depend on income, filing status, age, and other factors. Even if you are below thresholds, filing can help you claim refunds.</p>
+    </section>
+
+    <section>
+      <h2>First-Time Filer Tips</h2>
+      <ul>
+        <li>Double-check all Social Security numbers.</li>
+        <li>Verify names and dates of birth match Social Security records to avoid mismatches.</li>
+        <li>Keep copies of returns and supporting documents for at least three years.</li>
+        <li>Organize a simple folder with W-2s, 1099s, and receipts so you can respond quickly to requests.</li>
+        <li>Avoid preparers who demand large upfront fees or offer unrealistic refunds.</li>
+        <li>Ask for the preparer's PTIN and a printed copy of the return before you pay.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container">Contact: help@lowincometax.org • 1-800-555-1234 • <a href="privacy.html">Privacy Policy</a></div></footer>
+</body>
+</html>

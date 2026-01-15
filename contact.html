@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact — Low Income Tax Help</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Low Income Tax Help</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav class="site-nav" role="navigation" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tax-basics.html">Tax Basics</a></li>
+          <li class="has-submenu">
+            <a href="credits.html">Credits &amp; Deductions</a>
+            <ul class="submenu">
+              <li><a href="credits.html#eitc">EITC</a></li>
+              <li><a href="credits.html#ctc">CTC</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a href="irs-operations.html">IRS</a>
+            <ul class="submenu">
+              <li><a href="irs-operations.html">Overview</a></li>
+              <li><a href="audits.html">Audits</a></li>
+              <li><a href="tax-system.html">Tax system</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a href="free-programs.html">Free Help Programs</a>
+            <ul class="submenu">
+              <li><a href="free-programs.html">VITA</a></li>
+              <li><a href="free-programs.html">LITC</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a href="resources-warnings.html">Resources&nbsp;&amp; Warnings</a>
+            <ul class="submenu">
+              <li><a href="resources-warnings.html">Resources</a></li>
+              <li><a href="avoid-fraud.html">Avoid Scams</a></li>
+            </ul>
+          </li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Contact Us</h1>
+    <p>If you need help, please use the form below and we will respond when available.</p>
+
+    <section style="display:grid;grid-template-columns:1fr;gap:1rem;max-width:720px">
+      <div class="card">
+        <h3>Email</h3>
+        <p>Not available</p>
+      </div>
+      <div class="card">
+        <h3>Phone</h3>
+        <p>Not available</p>
+      </div>
+      <!-- 'Find help near you' removed per request -->
+      <div class="card">
+        <h3>Send us a message</h3>
+        <form id="contactForm">
+          <label for="contact-name">Name
+            <input id="contact-name" type="text" name="name" placeholder="Your full name" required>
+          </label>
+          <label for="contact-email">Email
+            <input id="contact-email" type="email" name="email" placeholder="you@example.com" required>
+          </label>
+          <label for="contact-subject">Subject
+            <input id="contact-subject" type="text" name="subject" placeholder="Subject (brief)">
+          </label>
+          <label for="contact-message">Message
+            <textarea id="contact-message" name="message" rows="4" placeholder="Write your message here" required></textarea>
+          </label>
+          <button class="btn" type="submit">Submit</button>
+          <p id="formMessage" class="form-message" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <p style="margin-top:1rem"><a class="btn" href="free-programs.html">Start Filing Today</a></p>
+  </main>
+
+  <footer class="site-footer"><div class="container">Contact: Not available • <a href="privacy.html">Privacy Policy</a></div></footer>
+</body>
+</html>
